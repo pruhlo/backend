@@ -1,0 +1,14 @@
+{% load create_var %}
+
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        {% makedict "Головна=home_page, Про відділ=#, Структура відділу=#, Стандартні операційні процедури=#, Контакти=#" as data %}
+        {% for name_link, link in data.items %}
+            <li>
+                <a href="{{ link }}">
+                    {{ name_link }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

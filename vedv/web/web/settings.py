@@ -124,7 +124,5 @@ USE_TZ = True
 # STATIC_URL = '/static/'
 STATIC_URL = '/assets/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "assets"),
-    # '/home/user/django-trunk/first/assets/borsch/',
-    # 'C:/Users/Pruhlo/Dropbox/Project_web/website/engine/static',
+    os.path.join(BASE_DIR, 'assets'),
 )

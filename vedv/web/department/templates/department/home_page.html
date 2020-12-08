@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            {% block left_sidebar %}
+                {% include "department/left_menu-navigation.html" %}
+            {% endblock left_sidebar %}
+        </div>
+        <div class="col-7">
+            {% block main_block %}
+                {% include "department/description.html" %}
+            {% endblock main_block %}
+        </div>
+        <div class="col-2">
+            {% block right_sidebar %}
+                {% include "department/sidebar-right.html" %}
+            {% endblock right_sidebar %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

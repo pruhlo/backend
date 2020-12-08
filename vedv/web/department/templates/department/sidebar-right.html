@@ -1,0 +1,13 @@
+{% load static %}
+{% load create_var %}
+
+<ul class="sidebar-nav">
+    {% makedict "moz.png=https://moz.gov.ua/, mon.png=https://www.mon.gov.ua/, nan.png=http://www.nas.gov.ua/, namnu.png=http://amnu.gov.ua/, decu.png=https://www.dec.gov.ua/, gov1.png=https://zakon.rada.gov.ua/" as data %}
+    {% for img, href in data.items %}
+        <li class="pt-3 d-flex justify-content-center"> 
+            <a href="{{ href }}">
+                <img class="img-fluid img-thumbnail" src="../assets/img/{{ img }}">
+            </a>
+        </li>
+    {% endfor %}
+</ul>

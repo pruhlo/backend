@@ -1,0 +1,10 @@
+{% load static %}
+
+
+
+<a href="../assets/Describe.xlsx" download>Скачать файл</a>
+
+{% for key, value in d.items %}
+    <h1>{{key}}</h1>
+    {{value|safe}}
+{% endfor %}

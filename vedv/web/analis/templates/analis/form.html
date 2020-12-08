@@ -1,0 +1,8 @@
+<form id="" action="{% url 'protocols' %}" method="POST">
+  {% csrf_token %}
+  <p> Количество соединений </p>
+  <input type="number" name="n" />
+  <p>Шифр</p>
+  <input type="text" name="shifr" />
+  <input type="submit" value="Сгенерировать таблицы" id="" />
+</form>

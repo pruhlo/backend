@@ -1,10 +1,11 @@
 {% load create_var %}
 
+<!-- Left menu-->
 <div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        {% makedict "Головна=home_page, Про відділ=#, Структура відділу=#, Стандартні операційні процедури=#, Контакти=#" as data %}
+    <ul class="sidebar-nav mt-5">
+        {% makedict "Головна=/, Про відділ=home_page, Структура відділу=#, Стандартні операційні процедури=#, Контакти=#, Таблиці=tables" as data %}
         {% for name_link, link in data.items %}
-            <li>
+            <li style="list-style-type: none;">
                 <a href="{{ link }}">
                     {{ name_link }}
                 </a>
@@ -12,3 +13,4 @@
         {% endfor %}
     </ul>
 </div>
+

@@ -1,0 +1,14 @@
+{% load static %}
+
+
+<h1>Сгенерированные таблицы </h1>
+<a href="../static/protocols_diuretic.xlsx" download>Скачать файл</a> <br>
+
+<a href="{% url 'get_analis' %}">Подсчитать статистику</a>
+
+{% for key, value in d.items %}
+    <h1>{{key}}</h1>
+    {{value|safe}}
+{% endfor %}
+
+

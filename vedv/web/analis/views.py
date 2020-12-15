@@ -4,7 +4,6 @@ from .diuretic import *
 from .make_describe_excel import *
 import os
 
-
 def get_home(request):
     return render(request, 'analis/home.html')
 

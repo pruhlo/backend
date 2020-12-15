@@ -1,6 +1,13 @@
+.btn-logo {
+  position: absolute; 
+  top: 50%; 
+  left: 75%; 
+  transform: translate(-50%, -50%);
+}
+
 button.button4 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
   font-size: 1.5em;
   font-weight: 700;
@@ -33,4 +40,21 @@ button.button4:active {
 }
 @keyframes pulsate {
   50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+
+@media (max-width: 768px) {
+  .btn-logo {
+    position: relative;
+    transform: none;
+    top: 0px;
+    left: 0px;
+    background-color: #007bff;
+  }
+
+}
+
+@media (max-width: 364px) {
+  .logo-vedv {
+    display: none;
+  }
 }

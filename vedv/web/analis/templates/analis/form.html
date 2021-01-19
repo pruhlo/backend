@@ -1,8 +1,12 @@
-<form class="mb-5" id="" action="{% url 'protocols' %}" method="POST">
-  {% csrf_token %}
-  <p> Количество соединений </p>
-  <input type="number" name="n" />
-  <p>Шифр</p>
-  <input type="text" name="shifr" />
-  <input type="submit" value="Сгенерировать таблицы" id="" />
-</form>
+<div class="container p-5">
+<div class="row">
+    <form class="mb-5" id="" action="{% url 'protocols' %}" method="POST">
+      {% csrf_token %}
+      <p> Количество соединений </p>
+      <input type="number" name="n" />
+      <p>Шифр</p>
+      <input type="text" name="shifr" />
+      <input type="submit" value="Сгенерировать таблицы" id="" />
+    </form>
+</div>
+</div>

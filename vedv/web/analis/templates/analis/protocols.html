@@ -1,14 +1,18 @@
 {% load static %}
 
 
-<h1>Сгенерированные таблицы </h1>
-<a href="../static/protocols_diuretic.xlsx" download>Скачать файл</a> <br>
-
-<a href="{% url 'get_analis' %}">Подсчитать статистику</a>
-
-{% for key, value in d.items %}
-    <h1>{{key}}</h1>
-    {{value|safe}}
-{% endfor %}
+<div class="container p-5">
+<div class="row">
+<div class="d-flex justify-content-center">
+            <a href="../assets/protocols.xlsx" download>Скачать файл</a>
+            <a class="btn-link" href="{% url 'get_analis'%}?q={{df_list}}"> Анализировать таблицы </a>
+            
+            {% for key, value in d.items %}
+                <h1>{{key}}</h1>
+                {{value|safe}}
+            {% endfor %}
+</div>
+</div>
+</div>
 
 

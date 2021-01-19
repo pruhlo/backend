@@ -2,3 +2,10 @@
 /env
 .env
 __pycache__/
+assets/
+.assets
+/assets
+'assets'
+
+
+SECRET_KEY.py
